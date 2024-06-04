@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c6ln4fgy8qlde" path="res://player.png" id="2_tlo0q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xhyda"]
-size = Vector2(12, 26)
+size = Vector2(5, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o1tpb"]
 atlas = ExtResource("2_tlo0q")
@@ -100,11 +100,11 @@ floor_snap_length = 2.0
 script = ExtResource("1_5bocr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -13)
+position = Vector2(0.5, -13)
 shape = SubResource("RectangleShape2D_xhyda")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -11)
 sprite_frames = SubResource("SpriteFrames_jbryl")
-animation = &"walk"
-frame_progress = 0.00898663
+animation = &"idle"
+frame_progress = 0.545752
